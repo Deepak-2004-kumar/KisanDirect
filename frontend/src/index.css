@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { @apply bg-gradient-to-b from-leaf-50 via-white to-white text-gray-800; }
+.btn-primary { @apply bg-leaf-600 hover:bg-leaf-700 text-white font-semibold py-3 px-6 rounded-xl text-lg transition-colors; }
+.btn-secondary { @apply bg-white border-2 border-leaf-600 text-leaf-700 font-semibold py-3 px-6 rounded-xl text-lg hover:bg-leaf-50 transition-colors; }
+.card { @apply bg-white rounded-2xl shadow-sm border border-gray-100 p-5 transition-shadow hover:shadow-md; }
+.input-field { @apply w-full border border-gray-300 rounded-xl px-4 py-3 text-lg focus:outline-none focus:ring-2 focus:ring-leaf-500; }
+.section-kicker { @apply text-xs font-bold uppercase tracking-widest text-leaf-700; }
+.metric-card { @apply card !p-4 relative overflow-hidden; }

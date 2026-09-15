@@ -1,0 +1,57 @@
+
+services:
+  db:
+    image: postgis/postgis:15-3.4
+    container_name: kisandirect-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-kisandirect}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-change_me_strong_password}
+      POSTGRES_DB: ${POSTGRES_DB:-kisandirect}
+    ports:
+      - "5432:5432"
+    volumes:
+      - kisandirect_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-kisandirect}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: kisandirect-backend
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql+psycopg2://${POSTGRES_USER:-kisandirect}:${POSTGRES_PASSWORD:-change_me_strong_password}@db:5432/${POSTGRES_DB:-kisandirect}
+      JWT_SECRET_KEY: ${JWT_SECRET_KEY:-CHANGE_ME_TO_A_LONG_RANDOM_SECRET}
+      CORS_ORIGINS: '${CORS_ORIGINS}'
+      ENV: development
+    ports:
+      - "8000:8000"
+    command: >
+      sh -c "python seed.py && uvicorn app.main:app --host 0.0.0.0 --port 8000"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: kisandirect-frontend
+    restart: unless-stopped
+    depends_on:
+      backend:
+        condition: service_healthy
+    ports:
+      - "5173:80"
+
+volumes:
+  kisandirect_pgdata:

@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Tomato",
+    "unit": "kg",
+    "base_price": 22,
+    "volatility": 0.35,
+    "seasonal_peak_month": 9
+  },
+  {
+    "name": "Wheat",
+    "unit": "kg",
+    "base_price": 24,
+    "volatility": 0.08,
+    "seasonal_peak_month": 4
+  },
+  {
+    "name": "Potato",
+    "unit": "kg",
+    "base_price": 14,
+    "volatility": 0.2,
+    "seasonal_peak_month": 2
+  },
+  {
+    "name": "Onion",
+    "unit": "kg",
+    "base_price": 18,
+    "volatility": 0.4,
+    "seasonal_peak_month": 11
+  },
+  {
+    "name": "Mustard",
+    "unit": "kg",
+    "base_price": 55,
+    "volatility": 0.12,
+    "seasonal_peak_month": 3
+  }
+]

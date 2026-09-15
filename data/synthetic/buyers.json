@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "user_id": 101,
+    "business_name": "FreshMart Retail",
+    "buyer_type": "Restaurant",
+    "phone": "8386501362",
+    "location": "Delhi",
+    "latitude": 28.72227,
+    "longitude": 77.1062,
+    "avg_monthly_volume_kg": 1000
+  },
+  {
+    "id": 2,
+    "user_id": 102,
+    "business_name": "Spice Route Restaurant",
+    "buyer_type": "Food Processor",
+    "phone": "8103484630",
+    "location": "Delhi",
+    "latitude": 28.68345,
+    "longitude": 77.06832,
+    "avg_monthly_volume_kg": 1000
+  },
+  {
+    "id": 3,
+    "user_id": 103,
+    "business_name": "AgroProcess Foods Pvt Ltd",
+    "buyer_type": "Institutional Buyer",
+    "phone": "8214257751",
+    "location": "Chandigarh",
+    "latitude": 30.7595,
+    "longitude": 76.78017,
+    "avg_monthly_volume_kg": 1000
+  },
+  {
+    "id": 4,
+    "user_id": 104,
+    "business_name": "Green Valley Hostel Mess",
+    "buyer_type": "FPO Aggregator",
+    "phone": "8918739736",
+    "location": "Chandigarh",
+    "latitude": 30.7442,
+    "longitude": 76.74468,
+    "avg_monthly_volume_kg": 500
+  },
+  {
+    "id": 5,
+    "user_id": 105,
+    "business_name": "Farmers FPO Collective",
+    "buyer_type": "Local Retailer",
+    "phone": "8100614068",
+    "location": "Chandigarh",
+    "latitude": 30.77865,
+    "longitude": 76.82164,
+    "avg_monthly_volume_kg": 5000
+  },
+  {
+    "id": 6,
+    "user_id": 106,
+    "business_name": "City Fresh Grocers",
+    "buyer_type": "Restaurant",
+    "phone": "8489747629",
+    "location": "Gurugram",
+    "latitude": 28.45836,
+    "longitude": 76.98779,
+    "avg_monthly_volume_kg": 1000
+  },
+  {
+    "id": 7,
+    "user_id": 107,
+    "business_name": "Punjab Grand Restaurant",
+    "buyer_type": "Food Processor",
+    "phone": "8184564737",
+    "location": "Karnal",
+    "latitude": 29.64149,
+    "longitude": 77.0283,
+    "avg_monthly_volume_kg": 200
+  },
+  {
+    "id": 8,
+    "user_id": 108,
+    "business_name": "National Food Processing Co",
+    "buyer_type": "Institutional Buyer",
+    "phone": "8671988889",
+    "location": "Ludhiana",
+    "latitude": 30.9326,
+    "longitude": 75.9051,
+    "avg_monthly_volume_kg": 500
+  },
+  {
+    "id": 9,
+    "user_id": 109,
+    "business_name": "Sunrise Institutional Caterers",
+    "buyer_type": "FPO Aggregator",
+    "phone": "8277303722",
+    "location": "Sonipat",
+    "latitude": 29.00908,
+    "longitude": 77.05978,
+    "avg_monthly_volume_kg": 1000
+  },
+  {
+    "id": 10,
+    "user_id": 110,
+    "business_name": "Metro Retail Chain",
+    "buyer_type": "Local Retailer",
+    "phone": "8327416584",
+    "location": "Chandigarh",
+    "latitude": 30.77054,
+    "longitude": 76.77171,
+    "avg_monthly_volume_kg": 5000
+  }
+]
